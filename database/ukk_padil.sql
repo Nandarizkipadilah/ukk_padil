@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Feb 2024 pada 04.40
+-- Waktu pembuatan: 26 Feb 2024 pada 11.56
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 8.0.11
 
@@ -107,6 +107,7 @@ CREATE TABLE `peminjaman` (
   `id_buku` varchar(10) NOT NULL,
   `nisn` varchar(50) NOT NULL,
   `id_user` int(10) NOT NULL,
+  `harga` varchar(50) NOT NULL,
   `tgl_pinjam` date NOT NULL,
   `tgl_kembali` date NOT NULL,
   `status` int(50) NOT NULL
@@ -123,6 +124,7 @@ CREATE TABLE `user` (
   `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `no_telp` varchar(50) NOT NULL,
   `sebagai` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -130,9 +132,9 @@ CREATE TABLE `user` (
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id`, `nama`, `username`, `password`, `sebagai`) VALUES
-(1, 'padilah', 'padil', '123321', 'admin'),
-(2, 'rzki', 'pdllah', '123', 'petugas');
+INSERT INTO `user` (`id`, `nama`, `username`, `password`, `no_telp`, `sebagai`) VALUES
+(1, 'padilah', 'padil', '123321', '0833-7987-9982', 'admin'),
+(2, 'rzki', 'pdllah', '123', '0819-0899-3449', 'petugas');
 
 --
 -- Indexes for dumped tables

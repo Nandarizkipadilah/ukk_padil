@@ -16,8 +16,8 @@ if (isset($_POST['nisn']) && isset($_POST['password'])) {
         $_SESSION['password'] = $password;
         $_SESSION['nisn'] = $nisn;
         $_SESSION['nama'] = $row['nama'];
-        // Script alert for successful login
-        echo "<script>alert('Login berhasil sebagai Member!'); window.location.href='../member/dashboard.php';</script>";
+       // Script alert for successful login
+       echo "<script>alert('Login berhasil sebagai Member!'); window.location.href='../member/dashboard.php';</script>";
     } else {
         // Login failed
         echo "<script>alert('NISN atau Password Anda salah. Silahkan coba lagi!')</script>";
@@ -32,8 +32,8 @@ $connect->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
     <title>Readbooks.com</title>
     <link rel="icon" href="../assets/iconblack.png" type="image/png">
     <style>
@@ -107,16 +107,15 @@ $connect->close();
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     <div class="text-center">
-                        <button type="submit" name="signIp" class="btn btn-primary mt-2" style="width:200px; height:50px;">Login</button>
+                        <button type="submit" name="submit" class="btn btn-primary mt-2" style="width:200px; height:50px;">Login</button>
+                        </div>
+                        </div>
+                        <div class="card-footer text-center">
+                        <p class="mt-2">Belum punya akun? <a href="../register/daftar.php" class="btn-link text-black">Daftar</a></p>
+                        <p class="mt-2">Anda admin? <a href="login_admin.php" class="btn-link text-black">Login Admin</a></p>
+                        <p class="mt-2"><a href="../index.php" class="btn-link text-black">Kembali</a></p>
                     </div>
-            </div>
-            <div class="card-footer text-center">
-                <p class="mt-2">Belum punya akun? <a href="../register/daftar.php" class="btn-link text-black">Daftar</a></p>
-                <p class="mt-2">Anda admin? <a href="login_admin.php" class="btn-link text-black">Login Admin</a></p>
-                <p class="mt-2"><a href="../index.php" class="btn-link text-black">Kembali</a></p>
-            </div>
-            </form>
-
+                </form>
         </div>
     </div>
 

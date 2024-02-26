@@ -53,8 +53,8 @@ $connect->close();
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
-  <title>Readbooks.com</title>
-  <link rel="icon" href="../assets/iconblack.png" type="image/png">
+    <title>Readbooks.com</title>
+    <link rel="icon" href="../assets/iconblack.png" type="image/png">
   <style>
     body {
       display: flex;
@@ -127,13 +127,12 @@ $connect->close();
           </div>
           <div class="text-center">
             <button type="submit" name="btn-login" class="btn btn-primary mt-2" style="width:200px; height:50px;">Login</button>
+            </div>
+            </div>
+            <div class="card-footer text-center">
+            <p class="mt-2">Anda siswa? <a href="login.php" class="btn-link text-black">Login siswa</a></p>
           </div>
-      </div>
-      <div class="card-footer text-center">
-
-        <p class="mt-2">Anda siswa? <a href="login.php" class="btn-link text-black">Login siswa</a></p>
-      </div>
-      </form>
+        </form>
     </div>
   </div>
 
